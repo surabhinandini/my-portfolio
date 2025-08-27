@@ -1,0 +1,148 @@
+/* =======================================
+   NAVBAR BASE
+======================================= */
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 100;
+  background-color: #1a1a1a; /* default background */
+  color: #fff;
+  transition: background 0.3s ease, color 0.3s ease;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.navbar.dark {
+  background-color: #111;
+  color: #eee;
+}
+
+.navbar-container {
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+/* Logo */
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+/* =======================================
+   DESKTOP MENU
+======================================= */
+.menu {
+  display: flex;
+  gap: 25px;
+  list-style: none;
+}
+
+.menu li button {
+  background: none;
+  border: none;
+  color: inherit;
+  cursor: pointer;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.menu li button:hover {
+  color: #ff6b6b;
+}
+
+/* =======================================
+   DARK/LIGHT TOGGLE BUTTON
+======================================= */
+.theme-toggle {
+  margin-left: 20px;
+  padding: 6px 12px;
+  border-radius: 20px;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  background: #1e90ff;
+  color: white;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+.theme-toggle:hover {
+  background: #0d6efd;
+}
+
+/* =======================================
+   HAMBURGER BUTTON (MOBILE)
+======================================= */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  gap: 4px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.hamburger span {
+  width: 25px;
+  height: 3px;
+  background-color: white;
+  transition: all 0.3s ease;
+}
+
+/* =======================================
+   MOBILE MENU
+======================================= */
+.mobile-menu {
+  display: none;
+  position: absolute;
+  top: 60px;
+  right: 20px;
+  background-color: #1a1a1a;
+  list-style: none;
+  padding: 12px 18px;
+  border-radius: 10px;
+  flex-direction: column;
+  gap: 10px;
+  z-index: 99;
+}
+
+.mobile-menu li button {
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.mobile-menu li button:hover {
+  color: #ff6b6b;
+}
+
+/* =======================================
+   RESPONSIVE
+======================================= */
+@media (max-width: 768px) {
+  .menu {
+    display: none;
+  }
+
+  .hamburger {
+    display: flex;
+  }
+
+  .mobile-menu {
+    display: flex;
+  }
+}
+
+/* =======================================
+   BODY DARK MODE
+======================================= */
+body.dark-mode {
+  background-color: #111;
+  color: #eee;
+}

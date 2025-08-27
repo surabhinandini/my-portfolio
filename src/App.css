@@ -1,0 +1,44 @@
+/* =======================================
+   GLOBAL APP STYLES
+======================================= */
+.App {
+  text-align: center;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  transition: all 0.3s;
+}
+
+/* =======================================
+   SHARED SECTION STYLING
+======================================= */
+.section {
+  padding: 80px 20px; /* balanced top & bottom space */
+  min-height: 70vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  scroll-behavior: smooth;
+}
+
+/* =======================================
+   FIX SCROLL JUMP FOR ANCHORS
+======================================= */
+[id] {
+  scroll-margin-top: 80px; /* adjust to navbar height */
+}
+
+/* Optional: smooth link transitions */
+a {
+  transition: color 0.3s ease, background 0.3s ease;
+}
+
+/* Utility: max width for content */
+.section > * {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+}

@@ -1,0 +1,164 @@
+/* Home Section */
+.home-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  min-height: 100vh;
+  padding: 2rem;
+  position: relative;
+  background: linear-gradient(135deg, #1f1f1f, #3b3b3b);
+  color: #fff;
+  overflow: hidden;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.35);
+  z-index: 1;
+}
+
+/* Profile Image */
+.profile-container {
+  z-index: 2;
+  margin-bottom: 1.5rem;
+}
+
+.profile-img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 4px solid #fff;
+  object-fit: cover;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.profile-img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px #13020200;
+}
+
+/* Home Content */
+.home-content {
+  z-index: 2;
+  max-width: 700px;
+}
+
+.title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  background: linear-gradient(90deg, #00f0ff, #ff00d4);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.subtitle {
+  font-size: 1.25rem;
+  margin-bottom: 2rem;
+  color: #ccc;
+}
+
+/* Resume Button */
+.button-group {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.btn {
+  padding: 0.75rem 1.75rem;
+  border-radius: 50px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  border: 2px solid transparent;
+  cursor: pointer;
+}
+
+.primary-btn {
+  background: linear-gradient(90deg, #00f0ff, #ff00d4);
+  color: #fff;
+}
+
+.primary-btn:hover {
+  background: transparent;
+  border: 2px solid #00f0ff;
+  color: #00f0ff;
+}
+
+/* Hire Me Circular Buttons */
+.hireme-group {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  z-index: 2;
+}
+
+.hireme-icon {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.hireme-icon img {
+  width: 24px;
+  height: 24px;
+  object-fit: contain;
+}
+
+/* Background Colors for Each Platform */
+.hireme-icon.email {
+  background: #ff4b5c;
+}
+
+.hireme-icon.linkedin {
+  background: #4ac20a;
+}
+
+.hireme-icon.github {
+  background: #1cbf93;
+}
+
+/* Hover Effects */
+.hireme-icon:hover {
+  transform: scale(1.2);
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.3);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .title {
+    font-size: 2rem;
+  }
+
+  .subtitle {
+    font-size: 1rem;
+  }
+
+  .profile-img {
+    width: 120px;
+    height: 120px;
+  }
+
+  .hireme-icon {
+    width: 40px;
+    height: 40px;
+  }
+
+  .hireme-icon img {
+    width: 20px;
+    height: 20px;
+  }
+}

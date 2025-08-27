@@ -1,0 +1,52 @@
+/* Smooth scroll for anchors */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Global CSS variables for dark/light mode */
+:root {
+  --bg-color: #1a1a1a;
+  --text-color: #fff;
+  --button-bg: #1e90ff;
+  --button-text: #fff;
+  --hover-color: #ff6b6b;
+}
+
+body.dark-mode {
+  --bg-color: #111;
+  --text-color: #eee;
+  --button-bg: #0d6efd;
+  --button-text: #fff;
+  --hover-color: #ff6b6b;
+}
+
+/* Body styles */
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  transition: all 0.3s;
+}
+
+/* Code font */
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+/* Anchor links smooth scrolling */
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* Buttons default */
+button {
+  font-family: inherit;
+  transition: all 0.3s;
+}
