@@ -36,7 +36,7 @@ const projects = [
   image: "/project4.jpg",
   github: "https://github.com/surabhinandini/my-portfolio",
   live: ""
-}
+},
 ];
 
 export default function Projects() {
