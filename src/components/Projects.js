@@ -29,6 +29,14 @@ const projects = [
     github: "https://github.com/surabhinandini/secure-cloud-deduplication",
     live: "",
   },
+  {
+  title: "My Personal Portfolio",
+  category: "Portfolio",
+  description: "React-based portfolio website showcasing my projects, skills, achievements, and contact info.",
+  image: "/project4.jpg",
+  github: "https://github.com/surabhinandini/my-portfolio",
+  live: ""
+}
 ];
 
 export default function Projects() {
