@@ -8,7 +8,7 @@ function About() {
       
       {/* Professional Introduction */}
       <p className="text-lg md:text-xl max-w-4xl mx-auto mb-12 text-center leading-relaxed">
-        I am a Dedicated developer skilled in Java, Spring Boot, Python, REST APIs, MySQL, and experienced in AWS, Docker, CI/CD, and Linux. Passionate about building scalable, secure applications, solving complex problems, and delivering impactful solutions. Open to opportunities to contribute, grow, and drive successful outcomes.
+        I am a dedicated Python developer and AI/ML enthusiast with hands-on experience in building machine learning models, predictive analytics solutions, and cloud-integrated AI applications. Skilled in Python, scikit-learn, TensorFlow, Pandas, NumPy, and Flask/Django for deploying ML solutions. Passionate about solving complex problems, delivering impactful AI/ML solutions, and continuously learning new technologies. Open to opportunities to contribute, grow, and drive successful outcomes in AI/ML projects.
       </p>
       
       {/* Education Section */}

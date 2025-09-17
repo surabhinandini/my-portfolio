@@ -16,7 +16,7 @@ function Home() {
       <div className="home-content">
         <h1 className="title">Hi, I'm Surabhi Nandini</h1>
         <p className="subtitle">
-          Tech Enthusiast | Backend, Cloud & Software Development Opportunities Welcome
+          AI/ML & Python Developer | Cloud-Integrated ML Solutions
         </p>
 
         {/* Resume Button */}
